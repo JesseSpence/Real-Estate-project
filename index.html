@@ -6,17 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-<div id="properties"></div>
 
+    <!-- navbar -->
+  
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          <a class="nav-link" href="#">PROPERTIES</a>
+          <a class="nav-link" href="#">CONTACT</a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+      <!-- home section -->
+      <section id="home">
+        <div class="hometext">
+        <H1> Jesse Real Estate</H1>
+        <h5>Dream big or dream on a budget</h5>
+      </div>
+      <!-- filter form -->
+      <div id="form1">
+      <form>
+          <div class="filters">
+            <label for="exampleInputEmail1" class="form-label">LOOKING FOR</label>
+            <div>
+                <select name="budgets" id="budgets" placeholder="Max Price">
+                    
+                    <option value="Budget">Looking for..</option>
+                    <option value="Budget">Apartment</option>
+                    <option value="$250">Family House</option>
+                    <option value="$250">Studio</option>
+                   
+                  </select>
+           
+        </div>
+        </div>
+        <div class="filters">
+            <label for="exampleInputEmail1" class="form-label">LOCATION</label>
+            <div>
+                <select name="budgets" id="budgets" placeholder="Max Price">
+                    
+                    <option value="Budget">All Cities</option>
+                    <option value="Budget">Chicago</option>
+                    <option value="$250">Los Angeles</option>
+                    <option value="$250">Miami</option>
+                    <option value="$250">New York</option>
+                  </select>
+           
+        </div>
+    </div>
+        
+    <div class="filters">
+            <label for="exampleInputEmail1" class="form-label">PROPERTY SIZE</label>
+            <div>
+                <select name="budgets" id="budgets" placeholder="Max Price">
+                    
+                    <option value="Budget">Bedrooms</option>
+                    <option value="Budget">1</option>
+                    <option value="$250">2</option>
+                    <option value="$250">3</option>
+                    <option value="$250">4</option>
+                    <option value="$250">5</option>
+                  </select>
+           
+        </div>
+    </div>
+       
+    <div class="filters">
+            <label for="budgets" class="form-label">YOUR BUDGET</label>
+            <div>
+                <select name="budgets" id="budgets" placeholder="Max Price">
+                    
+                    <option value="Budget">Max Price</option>
+                    <option value="Budget">Any</option>
+                    <option value="$250">$250</option>
+                    <option value="$250">$250</option>
+                    <option value="$250">$250</option>
+                  </select>
+           
+        </div>
+    </div>
+     </form>
+    </div>
+    </section>
+
+    <!-- property section -->
+    <section id="Housebox">
+        <h1 id="find" >Find your DREAM HOME</h1>
+
+<div id="properties"></div>
+</section>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/28c2fb0c61.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
-
-
-
-   
-  

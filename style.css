@@ -1,6 +1,128 @@
-#housecards{
-    background-color:rgba(226, 80, 109, 0.279);
-    width:fit-content;
-    padding:5px;
-    margin:5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: linear-gradient(90deg, rgba(162,58,180,1) 0%, rgba(252,253,29,1) 50%, rgba(69,190,252,1) 100%);
+
+  }
+
+#home{
+ background: url(assets/paul-szewczyk-nI4aC1kaTRc-unsplash.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding-top: 5%;
+    text-shadow: 1px 1px 2px black;
 }
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+li {
+    list-style-type: none;
+    }
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    
+}
+#form1{
+    flex-shrink: 1;
+    width: 60vw;
+    position: absolute;
+    bottom: 50px;
+    box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.632);
+  
+    
+}
+.filters{
+    flex-shrink: 1;
+    padding-left: 1%;
+    padding-bottom: 3%;
+}
+select , option{
+    width: 13.5vw;
+    height: 5vh;
+    border-color: white;
+    background-color: rgb(222, 220, 220);
+    border: 2px solid rgb(222, 220, 220);
+    border-radius: 25px;
+}
+.form-label {
+    font-weight: bold;
+}
+#find{
+    margin-top:10%;
+    margin-bottom:7%;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    margin-left: 5%;
+
+}
+
+    @media screen and (max-width:500px) {
+        #Housebox{
+            margin-top:25%;
+        }
+}
+#properties{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#housecards{
+    background-color:rgba(241, 236, 237, 0.858);
+    width:400px;
+    padding:10px;
+    margin:5px;
+   
+}
+
+#house-values{
+ display:flex;
+}
+li{
+    margin-left: 4%;
+    list-style: none;
+}
+
+.heart{
+    color: #989898;
+    margin-top: 15px;
+    margin-left: 230px;
+    font-size: 30px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .heart-active{
+    color: #C50707;
+  }
+  
+  .heart:hover{
+    color: red;
+    background-color: #f9f9f9;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease-in-out;
+  }
+
+
+
+
+
