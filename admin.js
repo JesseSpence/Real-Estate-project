@@ -189,6 +189,28 @@ function editHouse(id) {
   ShowHouseListings(houses);
 }
 
+function addListing() {
+  let listing = {
+    id: houses.length + 1,
+    title: document.querySelector("#Title").value,
+    area: document.querySelector("#Location").value,
+    image: document.querySelector("#Image").value,
+    type: document.querySelector("#Type").value,
+    bedrooms: document.querySelector("#Bedrooms").value,
+    baths: document.querySelector("#Bathrooms").value,
+    garage: document.querySelector("#Garage").value,
+    size: document.querySelector("#Size").value,
+    price: document.querySelector("#Price").value,
+    status: document.querySelector("#Status").value,
+  };
+  houses.push(listing);
+  localStorage.setItem("properties", JSON.stringify(houses));
+  
+  ShowHouseListings(houses);
+  console.log(houses);
+}
+
+
 
 
 

@@ -108,7 +108,7 @@ let houses = JSON.parse(localStorage.getItem("houses"))
    bathrooms:'2',
    garage:'1',
    size:'1200',
-   type:'Apartment',
+   type:'House',
    user:' Samuel Palmer',
    datePosted:'04/04/2020',
    yearBuilt:'2016',
@@ -174,8 +174,40 @@ function showHouses (houses) {
 
 showHouses(houses);
 
+// console.log( document.getElementById("comboA").ariaValueMax);
 
+//  function handleChange(houses){
+//     let value = document.getElementById("comboA").ariaValueMax;
+//     houses = houses.filter(function(house) { 
+//         let filteredHouses = houses.filter(function(house) {
+//             return house.type === value;
+//           });
+//       });}
+function typeHouse() {
+    let value = document.getElementById("comboA").value;
+    let filteredHouses = houses.filter((house) => {
+      return house.type === value     //loop through houses and return houses which id noes not match
+    });   
+    showHouses(filteredHouses);
+  }
 
+  function addressHouse() {
+    let value = document.getElementById("comboB").value;
+    let filteredHouses = houses.filter((house) => {
+      return house.address == (text.includes(value));      //loop through houses and return houses which id noes not match
+    });   
+    showHouses(filteredHouses);
+  }
+
+//     document.getElementById("comboA").onchange = function(){
+//     let value = document.getElementById("comboA").value;  
+//     houses = houses.filter(function(house) {
+//     return house.type === value;
+
+    
+//   });}
+  
+  
 // houses.forEach((house) => {
     
 //     li.innerHTML = `<input type="checkbox" onc"div");
@@ -195,3 +227,15 @@ showHouses(houses);
 // document.getElementById("properties").innerHTML = houses;}
 
 // createProperties();
+
+
+// function sortListings(){
+//     let price = listings.sort((a, b) => {
+//       return a.price - b.price;
+//     });
+//     let retrievedList = price;
+//     document.querySelector("#properties").innerHTML = "";
+//     retrievedList.forEach((propperty) => {
+//     showlistings(retrievedList)
+//   })
+// }

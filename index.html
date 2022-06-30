@@ -40,12 +40,12 @@
           <div class="filters">
             <label for="exampleInputEmail1" class="form-label">LOOKING FOR</label>
             <div>
-                <select name="budgets" id="budgets" placeholder="Max Price">
+                <select name="budgets" id="comboA" onchange="typeHouse()" placeholder="Max Price">
                     
-                    <option value="Budget">Looking for..</option>
-                    <option value="Budget">Apartment</option>
-                    <option value="$250">Family House</option>
-                    <option value="$250">Studio</option>
+                    <option value="All">Looking for..</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="House">Family House</option>
+                    <option value="Studio">Studio</option>
                    
                   </select>
            
@@ -54,13 +54,13 @@
         <div class="filters">
             <label for="exampleInputEmail1" class="form-label">LOCATION</label>
             <div>
-                <select name="budgets" id="budgets" placeholder="Max Price">
+                <select name="budgets" id="comboB" onchange="addressHouse()" placeholder="Max Price">
                     
-                    <option value="Budget">All Cities</option>
-                    <option value="Budget">Chicago</option>
-                    <option value="$250">Los Angeles</option>
-                    <option value="$250">Miami</option>
-                    <option value="$250">New York</option>
+                    <option value="All">All Cities</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Los Angeles;">Los Angeles</option>
+                    <option value="Miami">Miami</option>
+                    <option value="New York">New York</option>
                   </select>
            
         </div>
@@ -69,14 +69,14 @@
     <div class="filters">
             <label for="exampleInputEmail1" class="form-label">PROPERTY SIZE</label>
             <div>
-                <select name="budgets" id="budgets" placeholder="Max Price">
+                <select name="budgets" id="comboC" onchange="bedroomsHouse()" placeholder="Max Price">
                     
-                    <option value="Budget">Bedrooms</option>
-                    <option value="Budget">1</option>
-                    <option value="$250">2</option>
-                    <option value="$250">3</option>
-                    <option value="$250">4</option>
-                    <option value="$250">5</option>
+                    <option value="All">Bedrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                   </select>
            
         </div>
@@ -85,11 +85,11 @@
     <div class="filters">
             <label for="budgets" class="form-label">YOUR BUDGET</label>
             <div>
-                <select name="budgets" id="budgets" placeholder="Max Price">
+                <select name="budgets" id="comboD" onchange="priceHouse()" placeholder="Max Price">
                     
-                    <option value="Budget">Max Price</option>
-                    <option value="Budget">Any</option>
-                    <option value="$250">$250</option>
+                    <option value="All">Max Price</option>
+                    <option value="All">Any</option>
+                    <option value="$4500/mo">$4500/mo</option>
                     <option value="$250">$250</option>
                     <option value="$250">$250</option>
                   </select>
